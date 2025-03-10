@@ -23,57 +23,51 @@ body {
     background-image: url(/imagens/dog.png);
     background-position: left;
     background-repeat: no-repeat;
-    background-size: 150%, 150%;
+    background-size: 135%, 140%;
+    box-shadow: 
+        inset -10px 0 300px rgba(0, 0, 0, 0.7), /* Vinheta esquerda */
+        inset -20px 0px 800px rgba(0, 0, 0, 0.7); /* Vinheta direita */
     
 }
-/*
-#top::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle, rgba(243, 242, 242, 0.583) rgba(0, 0, 0, 0.741));
-    pointer-events: none; 
-} */
+
 #nav-menu {
     width: 1280px;
-    height: 44px;
+    height: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 20px;
-    padding-bottom:30px ;
-    
+    margin-bottom: 30px;
+    padding-left: 100px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    align-items: center;
+       
     .logo {
         width: 159px;
         height: 32px;
-        gap: 32px;
-        margin-right: 32px;
+        margin-right: 50px;
+        
     }
   
     ul { 
+        font-size: 16px;
         display:flex;
         flex-direction: row;
-        gap: 10px;
-
+        gap: 50px;
+        margin-right: 180px;
         a {
             color: aliceblue;
         }
                
     }
     button {
+        margin-left: 50px;
         background: none; 
         border: none; 
-        padding: 0; 
         cursor: pointer; 
 
        img {
-        width: 124px;
-        height: 44px;
+        width: 120px;
+        height: 40px;
         background-position: relative;
         bottom: 20%;
     

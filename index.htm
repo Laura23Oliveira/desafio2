@@ -40,7 +40,7 @@
 
             </section>
         </header>
-        <section id="shop" class="hero2">
+        <section id="shop" class="hero_2">
             <h2><img class="patas" src="/imagens/Patasp.png"> Shop</h2>
             <div class="shop-box">
 
@@ -157,7 +157,7 @@
          
          </section> 
 
-         <section id="services">
+         <section id="services" class="hero_2">
             <h2><img src="/imagens/Patasp.png">Services</h2>
             <article>
                 <div class="service-item">                     
@@ -193,7 +193,7 @@
             
         </article>
      </section>
-    <section id="about" class="hero2">
+    <section id="about" class="hero_2">
         <header>
             <h2><img class="patas" src="/imagens/Patasp.png">About Us</h2>
         </header>
@@ -226,7 +226,7 @@
     </section>
 
 
-    <section id="team" class="hero2">
+    <section id="team" class="hero_2">
         <header>
             <h2><img class="patas" src="/imagens/Patasp.png"> Our Team</h2>
         </header>
@@ -238,94 +238,110 @@
         </article>
 
     </section>
-    <section id="blog" class="hero2">
+    <section id="blog" class="hero_2">
         <header>
             <h2><img class="patas" src="/imagens/Patasp.png"> Blog</h2>  
         </header>
-            <h2>Milestone: 20,000 Pets Treated</h2>
-            <p>
-            Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. 
-            Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. 
+        <article>
+            <div class="text">
+            <h2>Milestone: 20,000 Pets Treated<br/></h2>
+            <p class="txt">
+            Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. <br/>
+            Quis at habitant diam at.Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. <br/>
+            
             Ipsum molestie aliquet sodales id est ac volutpat. Eget quis mi enim, leo lacinia pharetra, semper.
-             Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim.
+             Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. <br/>            
               Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet.
-               Ipsum molestie aliquet sodales id est ac volutpat. 
+               Ipsum molestie aliquet sodales id est ac volutpat. <br/>
             </p>
-            <h3>Renewed target</h3>
-            <p>Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper porttitor. 
-                Pulvinar ullamcorper sit dictumst ut eget a, elementum eu. Maecenas est morbi mattis id in ac.</p>
+            
+            <h3>Renewed target<br/></h3>
+            <p class="txt">
+            <br/>Pharetra morbi libero id aliquam elit massa integer tellus. 
+            Quis felis aliquam ullamcorper porttitor.<br/>Pulvinar ullamcorper sit dictumst ut eget a, 
+            elementum eu. Maecenas est morbi mattis id in ac.</p>
+
+            <button class="read-more">Read more</button>
+            </div>
                 <div class="video-container">
                     <iframe class="video-background" src="https://www.youtube.com/watch?v=wF5q4XwRqAU" frameborder="0" 
                     style="display: none;" allow="autoplay; encrypted-media" allowfullscreen>
                 </iframe>
                         Seu navegador não suporta a tag de vídeo.
                 </div>
-     <a href="">Read more</a>
+        </article>
+           
      </section>
 
-     <section id="contact">
-        <h2><img class="patas" src="/imagens/patas.png">Get in touch</h2>
+     <section id="contact" class="hero_2">
+        <h2><img class="patas" src="/imagens/patas01.png">Get in touch</h2>
+        <article>
         <fieldset id="form_contact">
-            <p>
+            <div id="fullname">
+            <p id="firstname">
             <label for="firstname" class="contact">First name</label>
-            <input type="text" id="firstname" name="firstname" required/>
-             
-            <label for="lastname" class="contact">last name</label> 
-            <input type="text" id="lastname" name="lastname" required/>
+            <input type="text" id="firstname" name="firstname" placeholder="Firstname" required/>
             </p>
-            <p>
+            <p id="lastname">
+            <label for="lastname" class="contact">Last name</label> 
+            <input type="text" id="lastname" name="lastname" placeholder="Lastname" required/>
+            </p>
+            </div>
+            <p id="email">
             <label for="email" class="contact">Email</label>
-            <input type="email" id="email" name="email" required/>
+            <input type="email" id="email" name="email" placeholder="Email" required/>
             </p>
-            <p>
+            <p id="message">
             <label for="message" class="contact">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
             </p> 
-            <p>  
+            <p id="checkbox">
             <input type="checkbox" id="privacy" name="terms" required>
-                <label for="privacy">You agree to our friendly <a href="">privacy policy.</a></label>
+            <label for="privacy">You agree to our friendly <a href="">privacy policy.</a></label>
+           </p>
+           <p>
+            <button type="submit" class="button">Send Message</button>
             </p>
         </fieldset>
-        <p>
-            <button type="submit" class="button">Send</button>
-        </p>
+       
         <aside id="to_contact">
-            <!--email-->
             <div class="to_contact">
-                <img class="contact" src="/imagens/email.png" alt="email icon">
+                <img class="contact-icon" src="/imagens/email.png" alt="email icon">
                 <span class="contact-title">Email</span>
                 <p class="contact-info">Our friendly team is here to help.</p>
                 <a href="hello@pawsnplay.com" class="contact-link">hello@pawsnplay.com</a>
             </div>
-            <!--chat-->
+           
             <div class="to_contact">
-                <img class="contact" src="/imagens/Chat.png" alt="chat icon">
+                <img class="contact-icon" src="/imagens/Chat.png" alt="chat icon">
                 <span class="contact-title">Live chat</span>
                 <p class="contact-info">Our friendly team is here to help.</p>
                 <a href="" class="contact-link">Start new chat</a>
             </div>
-            <!--Office-->
+          
             <div class="to_contact">
-                <img class="contact" src="/imagens/local.png" alt="gps icon">
-                <span class="contact-title"></span>
+                <img class="contact-icon" src="/imagens/local.png" alt="gps icon">
+                <span class="contact-title">Office</span>
                 <p class="contact-info">Come say hello at our office HQ.</p>
                 <a href="" class="contact-link">123, Yaya Abatan st, Ogba Lagos.</a>
             </div>
-            <!--phone-->
+           
             <div class="to_contact">
-                <img class="contact" src="/imagens/tel.png" alt="telephone icon">
+                <img class="contact-icon" src="/imagens/tel.png" alt="telephone icon">
                 <span class="contact-title">Phone</span>
                 <p class="contact-info">Mon-Fri from 8am to 5pm.</p>
                 <a href="tel:+234901234384" class="contact-link">+234 901234 384</a>
             </div>
         </aside>
+        </article>
      </section>
      <footer>
         <section id="join">
-            <p>Join our newsletter</p>
-            <p>Be the first to receive latest updates on promo, sales and offers </p>
-            <label for="email" class="subscribe">Enter your email</label>
-            <input type="email" id="subscribe" name="email" required/>
+            <div class="join">
+                <p>Join our newsletter</p>
+                <p>Be the first to receive latest updates on promo, sales and offers </p>
+            </div>
+            <input type="email" id="subscribe" name="email" placeholder="Enter your email" required/>
             <button type="submit" class="button">Subscribe</button>
         </section>
         <section id="footer">

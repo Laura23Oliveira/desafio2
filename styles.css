@@ -130,26 +130,26 @@ body {
 h2 {
         margin-left: 40px;
         margin-top: 60px;
-        font-size:28px;
+        font-size:26px;
         max-width: 1280;
         height: 70px;
         border-bottom: 0.2px solid rgb(188, 184, 184);
+      
 }
 h2 img {
             width: 28px;
             height: 28px;
 } 
 
-.hero2 {
+.hero_2 {
     display: flex;
     flex-direction: column;
     max-width: 1280px;
     height: auto;
-}
+}    
 
     
 .shop-box { 
-    max-width: 1280px;
     margin-left: 70px;
     margin-right: 45px;
     margin-top: 40px;
@@ -167,7 +167,7 @@ h2 img {
     justify-content: space-between;
 }
 .shop-box header .search-bar h3 {
-    font-size: 28px;
+    font-size: 24px;
 }
 .shop-box header input {
     width: 230px;
@@ -295,28 +295,37 @@ h2 img {
     bottom: 10px;
     left: 15%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 60px;
     height: 30px;
     z-index: 10;
     color: #F4F4F4;
     background-color: #3722c0;
+    align-items: center;
+    gap:5px;
 
 }
 
 
- #shop article .products-box .product-item .product-quantity .increase, .decrease{
-    bottom: 10px;
-    height: 30px;
-    left: 15%;
-    width: 60px;
+#shop article .products-box .product-item .product-quantity .increase,
+#shop article .products-box .product-item .product-quantity .decrease {
     display: flex;
-    justify-content: space-around;
-   
+    justify-content: center;
+    align-items: center;
     z-index: 10;
     color: #F4F4F4;
     background-color: #3722c0;
+    width: 30px;
+    height: 20px;
+    align-items: center;
+    border: none;
+    background: none;
  }
+ #shop article .products-box .product-item .product-quantity .quantity {
+    font-size: 14px;
+    text-align: center;
+    width: 20px;
+}
 #shop article .products-box .product-item .add-to-cart {
     height: auto;
     bottom: 10px;
@@ -329,15 +338,6 @@ h2 img {
     opacity: 0;
     z-index: 10;
 }
-
-#services {
-    max-width: 1280px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-      
-}
-
 
 #services article {
     max-width: 1280px;
@@ -473,7 +473,7 @@ h2 img {
 #about article {
     max-width: 1020px;
     height: 580px;
-    margin-left: 185px;
+    margin-left: 70px;
     margin-right: 45px;
     margin-top: 45px;
     padding: 40px 50px 50px 50px;
@@ -542,16 +542,59 @@ background-color: white;
 }
 
 #blog {
-    padding: 40px 50px 50px 50px;
-    max-width: 1280px;
+    padding: 0px 50px 0px 50px;
     display: flex;
     flex-direction: column;
+    gap: 64px;
+    height: 900px;
 }
 
+#blog article {
+    
+    display: flex;
+    flex-direction: row;
+    
+
+}
+#blog article .text{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    padding: 20px 20px 0px 20px;
+    }
+
+#blog article .text .txt {
+    margin: 10px;
+    margin-bottom: 0;
+    text-align: justify;
+    font-size: 18px;
+   
+}
+
+#blog article .text h2 {
+    margin: 0%;
+    padding: 10px 10px 10px 10px;
+    height: 65px;
+    font-size: 22px;
+}
+#blog article .text h3 {
+    margin: 10px;
+    font-size: 18px;
+}
+
+#blog article .text .read-more {
+    width: 149px;
+    height: 60px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #101828, #233250);
+    color: #ffffff;
+    margin-left: 8px;
+    margin-top: 20px;
+}
 #blog .video-container {
     background-image: url(/imagens/Image.png);
-    width: 600px;
-    height: 500px;
+    width: 550px;
+    height: 640px;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -569,4 +612,154 @@ background-color: white;
     object-fit: cover;
     z-index: 0;
     
+}
+#contact {
+    background-color: #011327;
+    color: #F4F4F4;
+}
+
+#contact article {
+    display: flex;
+    flex-direction: row;
+    padding: 70px 40px 70px 40px;
+    gap: 30px;
+}
+
+#contact #form_contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    color: #000000;
+    width: 576px;
+    height: 574px;
+    border-radius: 16px;
+    gap: 32px;
+    padding: 40px 32px 40px 32px;
+    font-size: 14px;
+    align-items: center;
+}
+
+#contact #form_contact #fullname {
+
+  display: flex;
+  flex-direction: row;
+  width: 480px;
+  height: 74px;
+  gap: 32px;
+  }
+  #contact #form_contact #fullname p input {
+    width: 224px;
+    
+  }
+
+#contact #form_contact p input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding: 12px 16px 12px 16px;
+    border:0.1px solid grey;
+    border-radius: 5px;
+    height: 48px;
+    width: 480px;
+}
+
+#contact #form_contact p #message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding-left: 10px;
+    border:0.1px solid #667085;
+    border-radius: 5px;
+    width: 480px;
+}
+
+#contact #form_contact #fullname label {
+    margin-bottom: 4px;
+}
+#contact #form_contact #checkbox {
+    color: #667085;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+
+}
+
+#contact #form_contact #checkbox a {
+    text-decoration: underline;
+}
+
+#contact #form_contact #checkbox input {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+}
+#contact #form_contact button {
+    width: 480px;
+    height: 64px;
+    border-radius: 8px;
+    color: #F4F4F4;
+    background-image: linear-gradient(to right, #101828, #233250)
+}
+
+
+#contact article aside {
+    margin: 32px 32px 62px 32px;
+    gap: 20px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+#contact article aside .to_contact {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: auto;
+    gap: 14px;
+}
+
+#contact #to_contact .to_contact .contact-icon {
+    width: 18px;
+    height: 18px;
+    
+}
+
+#contact #to_contact .to_contact .contact-title {
+    font-size: 18px;
+    line-height: 30px;
+}
+#contact #to_contact .to_contact .contact-info{ 
+    line-height: 24px;
+    font-size: 14px;
+    color: #CECECE;
+
+}
+
+#contact #to_contact .to_contact .contact-link {
+    line-height: 24px;
+    align-self: flex-start;
+    padding: 0;
+    color:#FFFFFF;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+footer {
+    background-color: #011327;
+    color: #F4F4F4;
+}
+
+footer #join {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+
+}
+footer #join .join {
+    width: 773px;
+    height: 68px;
+    gap: 8px;
 }

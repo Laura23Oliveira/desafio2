@@ -13,17 +13,21 @@
     
         <header id="top">
             <section id="nav-menu">
-            <h1><img class="logo" src="/imagens/Vector.png" alt="Paws n' Play"/></h1>
+                            <h1><img class="logo" src="/imagens/Vector.png" alt="Paws n' Play"/></h1>
                 <ul>
                     <li><a href="">Shop <img src="/imagens/seta.png"> </a></li>
                     <li><a href="">Services <img src="/imagens/seta.png"> </a></li>
                     <li><a href="">About us <img src="/imagens/seta.png"> </a></li>
                     <li><a href="">Contact <img src="/imagens/seta.png"> </a></li>
                 </ul>
-            </nav>
-        <button class="button-top">Get Started</button>
-        <br/>
-        </section>
+                <button id="hamburger-icon" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="button-top">Get Started</button>
+                <br/>
+            </section>
     
     <section id="hero_1">
                 
@@ -41,7 +45,9 @@
             </section>
         </header>
         <section id="shop" class="hero_2">
-            <h2><img class="patas" src="/imagens/Patasp.png"> Shop</h2>
+            <div id="title-shop">"<h2><img class="patas" src="/imagens/Patasp.png"> Shop</h2>
+            <input type="text">
+            </div>
             <div class="shop-box">
 
             <header>
@@ -174,7 +180,7 @@
                 <button class="button">Learn More</button>
             </div>   
             <div class="service-item">                     
-                <img src="/services/adoption.png" alt="Adoption">
+                <img id="adoption" src="/services/adoption.png" alt="Adoption">
                 <h3>Adoption</h3>
                 <button class="adoption">Adoption</button>
                 </div>
@@ -341,8 +347,10 @@
                 <p>Join our newsletter</p>
                 <p>Be the first to receive latest updates on promo, sales and offers </p>
             </div>
+            <p>
             <input type="email" id="subscribe" name="email" placeholder="Enter your email" required/>
             <button type="submit" class="button">Subscribe</button>
+            </p>
         </article>
         <article id="footer">
            <div id="text" class="footer-column">
